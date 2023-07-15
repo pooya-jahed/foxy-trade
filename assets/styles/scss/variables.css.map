@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "sources": [
+    "variables.scss",
+    "variables.css"
+  ],
+  "names": [],
+  "mappings": "AASA;EACE,kBAAA;EACA,kLAAA;EAGA,gBAXY;EAYZ,kBAXW;ACCb",
+  "file": "variables.css"
+}

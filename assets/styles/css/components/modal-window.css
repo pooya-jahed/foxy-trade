@@ -1,0 +1,63 @@
+.sample_farsi_digits {
+  -moz-font-feature-settings: "ss01", "tnum";
+  -webkit-font-feature-settings: "ss01", "tnum";
+  font-feature-settings: "ss01", "tnum";
+}
+
+.d-none {
+  display: none !important;
+}
+
+.modal-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 49;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(26, 47, 66, 0.9176470588);
+}
+
+.modal {
+  z-index: 50;
+  position: sticky;
+  top: 25%;
+  height: auto;
+  background-color: rgba(236, 121, 54, 0.9176470588);
+  width: 40vw;
+  border: 2px px solid #dfcec3;
+}
+.modal .line {
+  opacity: 50%;
+}
+.modal .modal-header {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.modal .modal-body {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+}
+.modal .modal-body,
+.modal .modal-header {
+  color: white;
+  padding: 0.5rem 1.5rem;
+}
+.modal .modal-btn-group {
+  margin: 2.8rem 0 1.6rem 1rem;
+  text-align: left;
+}
+.modal .modal-btn {
+  background-color: #ff9448;
+  color: white;
+  width: 7rem;
+  height: auto;
+  border: 1px solid #dfcec3;
+  text-align: center;
+  padding: 0 2rem;
+  font-size: 2rem;
+  margin: 0 0.5rem;
+}
+
+/*# sourceMappingURL=modal-window.css.map */

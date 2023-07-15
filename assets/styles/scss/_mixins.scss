@@ -1,0 +1,135 @@
+//***/font variables/******//
+.sample_farsi_digits {
+  -moz-font-feature-settings: "ss01", "tnum";
+  -webkit-font-feature-settings: "ss01", "tnum";
+  font-feature-settings: "ss01", "tnum";
+}
+//***/deafult setting/******//
+@mixin overAll {
+  $font-path: "/assets/fonts/";
+  $font-family: "Vazir";
+  $font-weight: 100, 200, 300, 500, 700;
+  $font-style: normal;
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    src: url(#{$font-path}Vazir-Thin.woff2) format("woff2"),
+      url(#{$font-path}Vazir-Light.woff2) format("woff2"),
+      url(#{$font-path}assets/fonts/Vazir-Regular.woff2) format("woff2");
+  }
+  * {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    &::after {
+      font-family: $font-family;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    &::before {
+      font-family: $font-family;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  }
+  a {
+    color: $text-Color;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  ul,
+  li,
+  ol {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+  }
+}
+
+@mixin text-Size-color($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+
+// _____media queries base on bootstrap break point _________
+@mixin media($breakpoint) {
+  @if ($breakpoint == xs) {
+    @media only screen and (max-width: 576px) {
+      @content;
+    }
+  } @else if ($breakpoint == sm) {
+    @media only screen and (max-width: 576px) and (min-width: 768px) {
+      @content;
+    }
+  } @else if ($breakpoint == md) {
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+      @content;
+    }
+  } @else if ($breakpoint == lg) {
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      @content;
+    }
+  } @else if ($breakpoint == xl) {
+    @media only screen and (min-width: 1200px) and (max-width: 1400px) {
+      @content;
+    }
+  } @else if ($breakpoint == xxl) {
+    @media only screen and (min-width: 1400px) {
+      @content;
+    }
+  }
+}
+@mixin media-down($breakpoint) {
+  @if ($breakpoint == xs-d) {
+    @media only screen and (max-width: 576px) {
+      @content;
+    }
+  } @else if ($breakpoint == sm-d) {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  } @else if ($breakpoint == md-d) {
+    @media only screen and (max-width: 992px) {
+      @content;
+    }
+  } @else if ($breakpoint == lg-d) {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  } @else if ($breakpoint == xl-d) {
+    @media only screen and (max-width: 1400px) {
+      @content;
+    }
+  }
+}
+@mixin media-up($breakpoint) {
+  @if ($breakpoint == xs-u) {
+    @media only screen and (min-width: 576px) {
+      @content;
+    }
+  } @else if ($breakpoint == sm-u) {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  } @else if ($breakpoint == md-u) {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  } @else if ($breakpoint == lg-u) {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  } @else if ($breakpoint == xl-u) {
+    @media only screen and (min-width: 1400px) {
+      @content;
+    }
+  }
+}

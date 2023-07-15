@@ -1,0 +1,58 @@
+// modal window
+@use "../mixins";
+@import "../variables";
+
+.d-none {
+  display: none !important;
+}
+.modal-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 49;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  background-color: #1a2f42ea;
+}
+.modal {
+  z-index: 50;
+  position: sticky;
+  top: 25%;
+  height: auto;
+  background-color: #ec7936ea;
+  width: 40vw;
+  border: 2px px solid #dfcec3;
+
+  .line {
+    opacity: 50%;
+  }
+  .modal-header {
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  .modal-body {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+  }
+  .modal-body,
+  .modal-header {
+    color: white;
+    padding: 0.5rem 1.5rem;
+  }
+  .modal-btn-group {
+    margin: 2.8rem 0 1.6rem 1rem;
+    text-align: left;
+  }
+  .modal-btn {
+    background-color: $sideBar-BgColor;
+    color: white;
+    width: 7rem;
+    height: auto;
+    border: 1px solid #dfcec3;
+    text-align: center;
+    padding: 0 2rem;
+    font-size: 2rem;
+    margin: 0 0.5rem;
+  }
+}
