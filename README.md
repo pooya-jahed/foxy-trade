@@ -12,7 +12,7 @@ you must using sass and install dependecies
 Clone the project
 
 ```bash
-git clone https://github.com/pooya-jahed/soft-clothes.git
+git clone https://github.com/pooya-jahed/foxy-trade.git
 ```
 Run
 
@@ -21,7 +21,7 @@ Run
 ```
 
 
-Install dependencies
+Instal dependencies
 
 ```bash
   npm install
