@@ -4,6 +4,7 @@
 @import "components/custom-scrollbar";
 @import "components/modal-window";
 @import "components/text-Effect";
+@import "support";
 
 // GLOBAL STYLE
 body,
@@ -88,7 +89,8 @@ a:hover:after {
 // ---------Main section----------
 .main-content-support {
   grid-template-columns: 1fr!important;
-  grid-template-rows: 45rem}
+  grid-template-rows: auto;
+}
 
 .main-content {
   display: grid;
@@ -127,7 +129,7 @@ a:hover:after {
     border-radius: 1rem;
     margin-top: 6rem;
   }
-  h2 {
+  .h2 {
     @include text-Size-color(3rem, $h2-Color);
     margin-top: 6rem;
   }

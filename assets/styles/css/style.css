@@ -194,6 +194,88 @@ html::-webkit-scrollbar-track {
     transform: translate(0);
   }
 }
+h2 {
+  font-size: 3rem;
+  color: #ff9719;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.main-content-support {
+  grid-template-columns: 1fr !important;
+  grid-template-rows: auto;
+}
+
+.footer-body-support {
+  grid-template-rows: 15rem !important;
+}
+
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.my-2 {
+  margin-top: 2rem;
+}
+
+.my-1 {
+  margin-top: 1rem;
+}
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+.ps-2 {
+  padding-right: 2rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .main-content-support .p-3 {
+    padding: 2rem;
+  }
+  .main-content-support h2 {
+    font-size: 2.5rem;
+  }
+  .main-content-support img {
+    width: 430px;
+  }
+  .main-content-support .mb-4 {
+    margin-bottom: 3rem;
+  }
+  .main-content-support .fs-2 {
+    font-size: 1.5rem;
+  }
+}
 @font-face {
   font-family: "Vazir";
   font-weight: 100, 200, 300, 500, 700;
@@ -316,7 +398,7 @@ a:hover:after {
 
 .main-content-support {
   grid-template-columns: 1fr !important;
-  grid-template-rows: 45rem;
+  grid-template-rows: auto;
 }
 
 .main-content {
@@ -357,7 +439,7 @@ a:hover:after {
   border-radius: 1rem;
   margin-top: 6rem;
 }
-.main-content h2 {
+.main-content .h2 {
   font-size: 3rem;
   color: #ff9719;
   margin-top: 6rem;
