@@ -259,15 +259,16 @@ h2 {
   padding-right: 2rem;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
   .main-content-support .p-3 {
     padding: 2rem;
   }
   .main-content-support h2 {
     font-size: 2.5rem;
+    margin-bottom: 1rem;
   }
   .main-content-support img {
-    width: 430px;
+    width: 410px;
   }
   .main-content-support .mb-4 {
     margin-bottom: 3rem;
@@ -276,6 +277,29 @@ h2 {
     font-size: 1.5rem;
   }
 }
+@media only screen and (max-width: 980px) {
+  .main-content-support h2 {
+    font-size: 2rem;
+  }
+  .main-content-support .container {
+    display: block;
+  }
+  .main-content-support img {
+    width: 380px;
+  }
+  .main-content-support .ps-2 {
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .main-content-support img {
+    width: 300px;
+  }
+  .main-content-support .fs-2 {
+    font-size: 1.3rem;
+  }
+}
+
 @font-face {
   font-family: "Vazir";
   font-weight: 100, 200, 300, 500, 700;
@@ -396,11 +420,6 @@ a:hover:after {
   visibility: hidden;
 }
 
-.main-content-support {
-  grid-template-columns: 1fr !important;
-  grid-template-rows: auto;
-}
-
 .main-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -509,10 +528,6 @@ a:hover:after {
   row-gap: 1rem;
   column-gap: 1rem;
   color: orange;
-}
-
-.footer-body-support {
-  grid-template-rows: 15rem !important;
 }
 
 .footer-title {

@@ -47,25 +47,51 @@ h2 {
 .ps-2 {
   padding-right: 2rem;
 }
-
-// media quieres <= 992
-@include media-down(md-d) {
-  .main-content-support {
+.main-content-support {
+  // media quires <= 992
+  @include media-down(lg-d) {
     .p-3 {
       padding: 2rem;
     }
     h2 {
-       font-size: 2.5rem; 
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
-    img{
-        width: 430px;
+    img {
+      width: 410px;
     }
-    .mb-4{
-        margin-bottom: 3rem;
+    .mb-4 {
+      margin-bottom: 3rem;
+    }
+    .fs-2 {
+      font-size: 1.5rem;
+    }
+  }
 
+  // media quires <= 850
+  @media only screen and (max-width: 980px) {
+    h2 {
+      font-size: 2rem;
     }
-    .fs-2{
-        font-size: 1.5rem;
+    .container {
+      display: block;
     }
+    img {
+      width: 380px;
+    }
+
+    .ps-2 {
+      padding-right: 0;
+    }
+  }
+  // media quires <= 576
+
+  @include media-down(xs-d) {
+    img {
+      width: 300px;
+    }
+    .fs-2 {
+        font-size: 1.3rem;
+      }
   }
 }
